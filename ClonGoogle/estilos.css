@@ -1,1 +1,120 @@
-!
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .95rem;
+    height: 100%;
+}
+
+#nav{
+    display: flex;
+    /* se alinean elementos al final del flexbox */
+    justify-content: flex-end;
+    /* se da margen pa despegar del layout */
+    margin-top: 1rem;
+}
+
+/* se da un margen a los elementos del la
+bara de navegacion  */
+#nav a{
+    /* se da margen para despegar del lado derecho del layout */
+    margin-right: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
+#nav a:hover{
+    text-decoration-line: underline;
+}
+
+#nav a.topimage{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#middle{
+   flex-grow: 1;
+   flex-direction: column;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#logo{
+    /* centrar el logo */
+    text-align: center;
+}
+
+/* dar formato a la barra de busqueda */
+#searchbarContainer{
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+
+}
+
+
+
+#searchbar{
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    /* quitar color azul del input */
+    outline: none;
+    width:  30rem;
+    border-radius: 20px;
+    border: 1px solid rgb(189, 187, 187);
+}
+
+#search, #voice{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#search{
+    left: .8rem;
+    
+}
+#voice{
+    right: .8rem;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+
+}
+
+.button{
+    padding:.4rem .8rem;
+    margin: 0 .4rem;
+    cursor: pointer;
+    background-color:rgba(240, 240, 240, 0.679) ;
+    border-radius: 3px;
+
+}
+.button:hover{
+    border: 1px solid  rgb(216, 216, 216);
+}
+#links{
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+#footer-content{
+    background-color: rgba(232, 231, 231, 0.884);
+    border-top: 1px solid black
+}
+
