@@ -1,0 +1,32 @@
+body{
+margin: 0;
+}
+.main{
+    display: grid;
+    grid-template-rows: 1rem 1fr 1rem;
+    margin: 0;
+    grid-gap: 10px;
+}
+
+.menu{
+   
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: rgba(230, 226, 226, 0.542);
+
+}
+.contenido{
+    padding: 2rem;
+    grid-row: 2/ 3;
+}
+
+.footer{
+
+    margin-top: auto;
+}
+
+.grid_element{
+
+    border: 1px black solid;
+}
