@@ -62,13 +62,17 @@ bara de navegacion  */
 
 
 #searchbar{
-    padding-top: .7rem;
-    padding-bottom: .7rem;
+   padding: .7rem 2.5rem;
+
     /* quitar color azul del input */
     outline: none;
     width:  30rem;
     border-radius: 20px;
     border: 1px solid rgb(189, 187, 187);
+}
+
+#searchbar:hover{
+    box-shadow: 0px 0px 2px 1px rgb(189, 189, 189);
 }
 
 #search, #voice{
@@ -93,7 +97,7 @@ bara de navegacion  */
     display: flex;
     justify-content: center;
     margin-top: 1.4rem;
-
+   
 }
 
 .button{
@@ -102,6 +106,8 @@ bara de navegacion  */
     cursor: pointer;
     background-color:rgba(240, 240, 240, 0.679) ;
     border-radius: 3px;
+    border: 1px solid transparent;
+
 
 }
 .button:hover{
@@ -113,8 +119,25 @@ bara de navegacion  */
 
 }
 
-#footer-content{
+#footer{
+    height: 3rem;
+    display: flex;
+    flex-flow: row wrap;
     background-color: rgba(232, 231, 231, 0.884);
-    border-top: 1px solid black
+    border-top: 1px solid rgb(192, 191, 191);
+   
+}
+
+.footer__link{
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+    margin: 0px .5rem;
+}
+
+.footer__link:nth-child(5){
+    flex-grow: 10;
 }
 
