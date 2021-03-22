@@ -1,10 +1,4 @@
 function computerPlay (){
-<<<<<<< HEAD
-    let options = ('rock','paper','scissors')
-    return options
-}
-
-=======
     let options = ['rock','paper','scissors']
     aleatorio = Math.floor(Math.random()*(options.length))
   console.log(aleatorio)
@@ -69,4 +63,3 @@ function game(){
 
 game()
 
->>>>>>> b0a81c86fd6f2f19801dc3361bf2c0ecf2c01b17
