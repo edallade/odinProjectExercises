@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="gameLogic.js"></script>
+    <link rel="stylesheet" href="gameStyles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        Rock Paper Scissors
+    </header>
+
+    <div class="gameBody">
+        <div class="gameObject" id="score">
+            <div class="score__element">
+                <div class='score_title'>
+                    User
+                </div>
+                <div class='score__number' id="usr"></div>
+             </div>
+            <div class="score__element">
+                <div class='score_title'>
+                    Draws
+                </div>
+                <div class='score__number' id="tie"></div>
+            </div>
+            <div class="score__element">
+                <div class='score_title'>
+                    Cpu
+                </div>
+                <div class='score__number' id="cpu"></div>
+            </div>
+        </div>
+        <div class="gameObject">
+            <div class="resultado">
+
+            </div>
+        </div>
+        <div class="gameObject" id="btns">
+            <div class="btn__game opt">
+                Rock
+            </div>
+            <div class="btn__game opt">
+                Scissors
+            </div>
+            <div class="btn__game opt">
+                Paper
+            </div>
+            <div class="btn__game" id="restart">
+                Reiniciar
+            </div>
+        </div>
+    </div>
 </body>
+<script src="gameVisualLogic.js"></script>
+
 </html>
